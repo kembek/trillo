@@ -1,0 +1,12 @@
+.body {
+  background-image: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-dark-color)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--grey-dark-color-2);
+
+  min-height: 100vh;
+}
