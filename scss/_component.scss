@@ -1,12 +1,46 @@
 .body {
-  background-image: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--primary-dark-color)
-  );
+  background-image: linear-gradient(135deg, var(--primary-light-color), var(--primary-dark-color));
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--grey-dark-color-2);
 
   min-height: 100vh;
+}
+
+.logo {
+  height: 3.25rem;
+}
+
+.search-form {
+  display: flex;
+
+  &__input {
+  }
+  &__button {
+  }
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.user-nav {
+  display: flex;
+
+  &__icon-box {
+  }
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+  &__notification {
+  }
+  &__user {
+  }
+  &__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+  }
+  &__user-name {
+  }
 }
