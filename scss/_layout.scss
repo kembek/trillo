@@ -42,7 +42,7 @@
 
 .detail {
   display: flex;
-  background-color: var(--grey-light-color-2);
+  background-color: var(--grey-light-color-1);
   border-bottom: var(--line);
   padding: 4.5rem;
   font-size: 1.4rem;
@@ -54,10 +54,12 @@
   box-shadow: var(--shadow-light);
   padding: 3rem;
   background-color: $white-color;
-  font-size: 1.4rem;
 }
 
 .user-reviews {
   flex: 1;
-  background-color: yellowgreen;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
