@@ -9,7 +9,7 @@
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom-color: var(--grey-light-color-2);
+  border-bottom: 1px solid var(--grey-light-color-2);
 
   display: flex;
   justify-content: space-between;
@@ -32,10 +32,7 @@
 }
 
 .hotel-view {
-  // background-color: #fff;
-
   // TODO: Delete bellow properties
-  background-color: orangered;
   min-height: 80rem;
 
   flex: 1;
