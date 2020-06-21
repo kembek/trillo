@@ -26,14 +26,17 @@
 
   flex: 0 0 18%;
 
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
   // background-color: #fff;
+
+  // TODO: Delete bellow properties
   background-color: orangered;
+  min-height: 80rem;
 
   flex: 1;
-
-  height: 100%;
 }
