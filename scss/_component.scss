@@ -142,9 +142,25 @@
   list-style: none;
   margin-top: 3.75rem;
 
+  @media screen and (max-width: $bp-medium) {
+    margin: 0;
+    display: flex;
+  }
+
   &__item {
-    margin-bottom: 0.5rem;
     position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+      @media screen and (max-width: $bp-medium) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      flex: 1;
+      margin-bottom: 0;
+    }
   }
 
   &__item::before {
@@ -181,6 +197,10 @@
 
     position: relative;
     z-index: 10;
+
+    @media screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
   }
 
   &__icon {
@@ -198,6 +218,10 @@
   text-align: center;
   color: var(--grey-light-color-4);
   padding: 2.5rem;
+
+  @media screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
 ///////////////////////////////////
@@ -365,6 +389,7 @@
     margin-right: auto;
   }
   &__friends {
+    display: flex;
   }
   &__photo {
     box-sizing: content-box;
@@ -376,7 +401,7 @@
     transition: all 0.3s;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
 
     &:hover {
@@ -397,6 +422,11 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 3.5rem;
+
+  @media screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 
   &::before {
     content: '\201C';
@@ -449,6 +479,10 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @media screen and (max-width: $bp-medium) {
+    padding: 2.5rem 0;
+  }
 
   &__book-now {
     font-size: 2rem;

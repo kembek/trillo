@@ -21,6 +21,10 @@ $white-color: #fff;
   --line: 1px solid var(--grey-light-color-2);
 }
 
+$bp-largest: 75em;
+$bp-larger: 68.75em;
+$bp-medium: 56.25em;
+
 *,
 *::before,
 *::after {
@@ -32,6 +36,10 @@ $white-color: #fff;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media screen and (max-width: $bp-larger) {
+    font-size: 50%;
+  }
 }
 
 body {
